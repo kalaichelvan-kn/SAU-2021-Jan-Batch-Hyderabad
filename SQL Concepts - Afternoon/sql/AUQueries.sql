@@ -9,7 +9,7 @@ INNER JOIN
 	WHERE C.LOC_CODE="L001" 
 	AND C.CUST_ID=S.CUST_ID 
     GROUP BY DOP,PROD_CODE) T
-ON T.PROD_CODE=P.PROD_CODE;
+ON T.PROD_CODE=P.PROD_CODE GROUP BY T.DOP;
 
 -- Write a query to list all the sales persons details along with the count of products sold by them (if any) till current date.
 SELECT SE.*, IFNULL(T.PRODUCTS_SOLD, 0) AS NO_OF_PRODUCTS_SOLD, IFNULL(T.NO_OF_UNITS_SOLD, 0) AS NO_OF_UNITS_SOLD FROM SALES_EXE SE
