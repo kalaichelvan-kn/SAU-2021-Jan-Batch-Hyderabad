@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AU'21</title>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    </head>
+    <body onload="onloaduser()" style="background-color: rgb(216, 216, 216);">
+        <header>
+        </header>
+        <!-- Main Container -->
+        <div id="container">
+            <section>
+            <div id="formheading">
+                <center><h3>User Data Form</h3></center>
+            </div>
+            <form onsubmit="return blockaccess()">
+                <center>
+                <table>
+                    <tr>
+                        <td>First Name</td>
+                        <td><input type="text" name="fname" id="fname" /></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name</td>
+                        <td><input type="text" name="lname" id="lname" /></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="email" name="email" id="email" /></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="password" name="pwd" id="pwd" /></td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td><input type="number" pattern="[1-9]{1}[0-9]{9}" name="mobile" id="mobile" /></td>
+                    </tr>
+                    <tr>
+                        <td>Date of Birth</td>
+                        <td><input type="date" name="dob" id="dob" /></td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>
+                            <select id="genders">
+                            <option value="Male">Male</option>
+                            <option value="saab">Female</option>
+                            <option value="opel">Other</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Age</td>
+                        <td><input type="number" pattern="[1-9]{1}[0-9]{1}" name="age" id="age" /></td>
+                    </tr>
+                    <tr>
+                        <td>Favourite Color</td>
+                        <td><input type="color" name="favcol" id="favcol" /></td>
+                    </tr>
+                    <tr><td></td></tr>
+                    <tr>
+                        <td></td><td><input type="submit" onclick="return saveUser()" id="submit"/></td>
+                    </tr>
+                    <tr><td><button onclick="clearUserData()">Clear Saved data</button></td><td></td></tr>
+                </table>
+                </center>
+            </form>
+        </div> 
+        <!-- Main container end -->
+        </section>
+        <section>
+            <div>
+                <span id="userdataop"></span>
+            </div>
+        </section>
+        <footer>
+            <script src="javascript.js"></script>
+            <script src="./js/bootstrap.min.js"></script>
+        </footer>
+    </body>
+</html>

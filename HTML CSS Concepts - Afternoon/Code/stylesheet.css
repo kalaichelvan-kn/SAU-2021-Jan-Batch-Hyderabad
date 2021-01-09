@@ -1,0 +1,51 @@
+.pbar { 
+    height: 35px;
+    width: 100%;
+    position: relative;
+    background: lightseagreen;
+    overflow: hidden;
+    top: 20%;
+    text-align: center;
+    padding: 5px;
+    /* margin-bottom: 5px solid orange; */
+}
+
+.pbar span {
+    display: block;
+    height: 100%;
+    border-radius: 3px;
+}
+
+.progress {
+    animation: progressBar 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite; 
+}
+
+@keyframes progressBar {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+.img-fluid {
+    width: 90%;
+    height: auto;
+    padding: 15px;
+    border-radius: 50px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
+  }
+
+.aboutkn{
+    left:20px;
+}
+
+body{
+    background-color: black;
+}
+
+.crr{
+    background-color: rgba(62, 182, 252, 0.596);
+    margin-top: 18px;
+    color: black;
+    border-radius: 2px;
+}
