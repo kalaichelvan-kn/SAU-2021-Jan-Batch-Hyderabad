@@ -7,7 +7,38 @@
     <title>JS Afternoon</title>
 </head>
 <body>
-    <h2>JS session - 2</h2>
+    <h2>&nbsp;&nbsp; JS session - 2</h2>
+    <div class="container">
+        <br/><hr/>
+        <div class="row">
+            Input & Code:
+            <span id="input">
+                <pre>
+                    var intArr = [1, 2, 3, 4, 5];
+                    function cusmap(arr, init, redfn){
+                        let last=0;
+                        for(var i=0; i < arr.length; i++) {        
+                            last = redfn(last,arr[i]);    
+                        }
+                        return last;
+                    }    
+                    var output = cusmap(intArr,0,(acc,cur)=> acc + cur);
+                </pre>
+            </span>
+        </div>
+        <br/><hr/>
+        <div class="row">
+            Output:
+            <span id="output">
+                
+            </span>
+        </div>
+    </div>
+    <style>
+        body{
+            background: #f3fdfa;
+        }
+    </style>
     <script src="./index.js"></script>
 </body>
 </html>

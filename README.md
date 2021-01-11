@@ -6,7 +6,7 @@
 4. NoSQL Concepts - Forenoon [status - Completed]
 5. HTML CSS - Afternoon [status - Completed]
 6. JavaScript 1 - Forenoon  [status - Completed]
-7. JavaScript 2 - Afternoon  [status - Pending]
+7. JavaScript 2 - Afternoon  [status - Completed]
 8. Angular 1 - Forenoon  [status - Upcoming]
 9. Angular 2 - Afternoon  [status - Upcoming]
 10. React 1 - Forenoon  [status - Upcoming]
