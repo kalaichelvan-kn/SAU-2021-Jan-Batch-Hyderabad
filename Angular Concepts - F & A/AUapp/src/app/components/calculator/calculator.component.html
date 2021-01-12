@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row"><h2>Calculator</h2></div>
+    <div class="row">
+        <input type="number" [(ngModel)]="num1" placeholder="Number 1"/> &nbsp;&nbsp;
+        <input type="number" [(ngModel)]="num2" placeholder="Number 2"/> &nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp; Result: <input type="text" [(ngModel)]="result" placeholder="Output" disabled/>
+    </div><br/>
+    <div class="row">
+        <div class="col-3"><button class="btn btn-warning" name="add" (click)="calAdd()">Add +</button></div>
+        <div class="col-3"><button class="btn btn-warning" name="sub" (click)="calSub()">Subtract -</button></div>
+        <div class="col-3"><button class="btn btn-warning" name="mul" (click)="calMul()">Multiply *</button></div>
+        <div class="col-3"><button class="btn btn-warning" name="div" (click)="calDiv()">Divide /</button></div>
+    </div>
+</div>
