@@ -1,4 +1,4 @@
 *.txt
 *.docx
 node_modules/
-/React Native/aumoviedb
+React Native/aumoviedb
