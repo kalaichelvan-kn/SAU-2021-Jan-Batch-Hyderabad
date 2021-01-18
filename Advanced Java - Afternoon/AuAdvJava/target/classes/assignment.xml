@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<assignments>
+    <assignment id="1">
+        <name>advanced java</name>
+        <prog_lang>java</prog_lang>
+        <status_update>in progress</status_update>
+    </assignment>
+    <assignment id="2">
+        <name>python basics</name>
+        <prog_lang>python</prog_lang>
+        <status_update>submitted</status_update>
+    </assignment>
+</assignments>
