@@ -4,6 +4,7 @@ Maven - Web App - Servlet - kalai.chelvan@accolitedigital.com
 
 - mvn archetype:generate -DarchetypeArtifactId=maven-archetype-webapp -DartifactId=auwebapp -Dpackage=com.accolite.au -DGroupId=com.accolite.au -DarchetypeVersion=1.4
 
+```xml
 <dependency>
   <groupId>javax.servlet</groupId>
   <artifactId>javax.servlet-api</artifactId>
@@ -26,6 +27,7 @@ Maven - Web App - Servlet - kalai.chelvan@accolitedigital.com
       <path>/</path>
     </configuration>
 </plugin>
+```
 
 - mvn tomcat7:run
 
