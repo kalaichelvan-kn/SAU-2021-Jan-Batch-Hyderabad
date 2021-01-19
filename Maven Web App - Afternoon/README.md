@@ -29,8 +29,8 @@ Maven - Web App - Servlet - kalai.chelvan@accolitedigital.com
 
 - mvn tomcat7:run
 
-![sc1](https://raw.githubusercontent.com/kalaichelvan-kn/SAU-2021-Jan-Batch-Hyderabad/main/Maven%20Web%20App%20-%20Afternoon/intsallcmd.PNG)
-![sc2](https://raw.githubusercontent.com/kalaichelvan-kn/SAU-2021-Jan-Batch-Hyderabad/main/Maven%20Web%20App%20-%20Afternoon/intsallpath.PNG)
+![sc1](https://raw.githubusercontent.com/kalaichelvan-kn/SAU-2021-Jan-Batch-Hyderabad/main/Maven%20Web%20App%20-%20Afternoon/installcmd.PNG)
+![sc2](https://raw.githubusercontent.com/kalaichelvan-kn/SAU-2021-Jan-Batch-Hyderabad/main/Maven%20Web%20App%20-%20Afternoon/installpath.PNG)
 ![sc3](https://raw.githubusercontent.com/kalaichelvan-kn/SAU-2021-Jan-Batch-Hyderabad/main/Maven%20Web%20App%20-%20Afternoon/webappcreate.PNG)
 ![sc4](https://raw.githubusercontent.com/kalaichelvan-kn/SAU-2021-Jan-Batch-Hyderabad/main/Maven%20Web%20App%20-%20Afternoon/servletcode.PNG)
 ![sc5](https://raw.githubusercontent.com/kalaichelvan-kn/SAU-2021-Jan-Batch-Hyderabad/main/Maven%20Web%20App%20-%20Afternoon/tomcatrun.PNG)
