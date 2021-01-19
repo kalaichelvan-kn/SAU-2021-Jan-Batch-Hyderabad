@@ -1,4 +1,4 @@
-# SAU-2021-Jan-Batch-Hyderabad React Native
+# SAU-2021-Jan-Batch-Hyderabad Java MultiThreading
 
 Java Multithreading - kalai.chelvan@accolitedigital.com
 
@@ -10,4 +10,4 @@ Java Multithreading - kalai.chelvan@accolitedigital.com
  -> thread file -> (  for each paragraph -> thread sentence(  for each sentence - > (  thread word  )   )   )
 
 
-![sc1](https://raw.githubusercontent.com/kalaichelvan-kn/SAU-2021-Jan-Batch-Hyderabad/tree/main/Java%20Multithreading%20-%20Forenoon/output.jpg)
+![sc1](https://raw.githubusercontent.com/kalaichelvan-kn/SAU-2021-Jan-Batch-Hyderabad/main/Java%20Multithreading%20-%20Forenoon/output.JPG)
