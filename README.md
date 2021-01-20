@@ -18,7 +18,7 @@
 16. Java Multithreading - Forenoon  [status - Completed]
 17. Java Maven, web/app Services - Afternoon  [status - Completed]
 18. Spring core Framework - Forenoon  [status - Upcoming]
-19. Spring MVC - Afternoon  [status - Upcoming]
+19. Spring MVC - Afternoon  [status - Completed]
 20. Hibernate 1 - Forenoon  [status - Upcoming]
 21. Hibernate 2 - Afternoon  [status - Upcoming]
 22. Design Principles/Patterns - Forenoon  [status - Upcoming]
