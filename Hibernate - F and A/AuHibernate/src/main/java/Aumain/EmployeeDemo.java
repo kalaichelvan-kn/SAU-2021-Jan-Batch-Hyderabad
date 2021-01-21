@@ -31,8 +31,8 @@ public class EmployeeDemo {
         PersonalDetails personalDetails1 = new PersonalDetails("k@gmail.com", "992218", employee1);
         PersonalDetails personalDetails2 = new PersonalDetails("chelvan@gmail.com", "827399", employee2);
 
-        Address address1 = new Address("T Nagar", "Chennai", employee1);
-        Address address2 = new Address("Thiruvandipuram", "Cuddalore", employee1);
+        Address address1 = new Address("T Nagar", "Chennai", 600025, employee1);
+        Address address2 = new Address("Thiruvandipuram", "Cuddalore", 607401,employee1);
 
         Set<Address> employee1Address = new HashSet<>();
         employee1Address.add(address1);
@@ -41,8 +41,8 @@ public class EmployeeDemo {
 
         Courses courses1 = new Courses();
         Courses courses2 = new Courses();
-        courses1.setSessionName("Spring MVC Afternoon");
-        courses2.setSessionName("Spring Core Forenoon");
+        courses1.setCourseName("Spring MVC Afternoon");
+        courses2.setCourseName("Spring Core Forenoon");
         Set<Courses> courses = new HashSet<>();
         courses.add(courses1);
         courses.add(courses2);
@@ -55,8 +55,6 @@ public class EmployeeDemo {
 
         try{
             session.beginTransaction();
-//            session.save(address1);
-//            session.save(address2);
             session.save(courses1);
             session.save(courses2);
             session.save(employee1);

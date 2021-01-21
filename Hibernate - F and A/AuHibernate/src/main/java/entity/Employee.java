@@ -25,7 +25,7 @@ public class Employee {
 
     @ManyToMany(cascade=CascadeType.ALL)
     @JoinTable(name="EmployeeCourse", joinColumns={@JoinColumn(referencedColumnName="empId")}
-            , inverseJoinColumns={@JoinColumn(referencedColumnName="sessionId")})
+            , inverseJoinColumns={@JoinColumn(referencedColumnName="courseId")})
     private Set<Courses> coursesSet;
 
     public Employee(String firstName, String lastName) {

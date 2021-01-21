@@ -16,8 +16,8 @@ import java.util.Set;
 public class Courses {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int sessionId;
-    private String sessionName;
+    private int courseId;
+    private String courseName;
 
     @ManyToMany(mappedBy="coursesSet")
     private Set<Employee> employeeSet;

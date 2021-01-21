@@ -5,18 +5,17 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Getter
 @Setter
 @NoArgsConstructor
-public class PersonalDetails {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int pId;
+public class PersonalDetails implements Serializable {
     private String email;
     private String mobile;
 
+    @Id
     @OneToOne
     @MapsId
     private Employee employee;
