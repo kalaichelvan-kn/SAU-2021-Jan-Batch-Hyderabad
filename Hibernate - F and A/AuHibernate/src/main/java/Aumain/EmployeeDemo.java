@@ -31,8 +31,8 @@ public class EmployeeDemo {
         PersonalDetails personalDetails1 = new PersonalDetails("k@gmail.com", "992218", employee1);
         PersonalDetails personalDetails2 = new PersonalDetails("chelvan@gmail.com", "827399", employee2);
 
-        Address address1 = new Address("T Nagar", "Chennai", 600025, employee1);
-        Address address2 = new Address("Thiruvandipuram", "Cuddalore", 607401,employee1);
+        Address address1 = new Address("T Nagar", "Chennai", 600025);
+        Address address2 = new Address("Thiruvandipuram", "Cuddalore", 607401);
 
         Set<Address> employee1Address = new HashSet<>();
         employee1Address.add(address1);

@@ -17,14 +17,11 @@ public class Address {
     private String area;
     private String district;
     private int pincode;
+    private int employeeId;
 
-    @ManyToOne
-    private Employee employee;
-
-    public Address(String area, String district, int pincode, Employee employee) {
+    public Address(String area, String district, int pincode) {
         this.area = area;
         this.district = district;
-        this.employee = employee;
         this.pincode = pincode;
     }
 }

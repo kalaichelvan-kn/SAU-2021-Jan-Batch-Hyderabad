@@ -20,7 +20,7 @@ public class Employee {
     private String firstName;
     private String lastName;
 
-    @OneToMany(mappedBy = "employee", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "employeeId", fetch = FetchType.EAGER,cascade = CascadeType.ALL)
     private Set<Address> addresses;
 
     @ManyToMany(cascade=CascadeType.ALL)
