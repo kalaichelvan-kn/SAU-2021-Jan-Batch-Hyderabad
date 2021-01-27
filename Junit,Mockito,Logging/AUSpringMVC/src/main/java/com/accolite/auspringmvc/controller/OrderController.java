@@ -3,7 +3,7 @@ package com.accolite.auspringmvc.controller;
 import com.accolite.auspringmvc.model.Item;
 import com.accolite.auspringmvc.model.Order;
 import com.accolite.auspringmvc.service.OrderService;
-import com.sun.istack.internal.NotNull;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -18,22 +18,28 @@ public class OrderController {
     OrderService orderService;
 
     @GetMapping("/create/{id}")
-    public ResponseEntity<String> createOrder(@PathVariable("id") @NotNull int orderId){
+    public ResponseEntity<String> createOrder(@PathVariable("id") int orderId) throws Exception{
+        if (orderId < 1) {
+            throw new Exception("orderId");
+        }
         String response = orderService.createOrder(orderId);
         return ResponseEntity.ok(response);
     }
     @PostMapping("/{id}/item/add")
-    public ResponseEntity<String> addItem(@PathVariable("id") @NotNull int orderId, @RequestBody Item item){
+    public ResponseEntity<String> addItem(@PathVariable("id") int orderId, @RequestBody Item item) throws Exception{
+        if(item.getItemId()<1 || !StringUtils.isAlpha(item.getName()) || item.getQuantity()<1){
+            throw new Exception("item data error");
+        }
         String response = orderService.addItem(orderId, item);
         return ResponseEntity.ok(response);
     }
     @PostMapping("/{id}/item/update")
-    public ResponseEntity<String> updateItem(@PathVariable("id") @NotNull int orderId, @RequestBody Item item){
+    public ResponseEntity<String> updateItem(@PathVariable("id") int orderId, @RequestBody Item item){
         String response = orderService.updateItem(orderId, item);
         return ResponseEntity.ok(response);
     }
     @GetMapping("/{orderId}/item/delete/{itemId}")
-    public ResponseEntity<String> deleteItem(@PathVariable("orderId") @NotNull  int orderId, @PathVariable("itemId") int itemId){
+    public ResponseEntity<String> deleteItem(@PathVariable("orderId") int orderId, @PathVariable("itemId") int itemId){
         String response = orderService.deleteItem(orderId, itemId);
         return ResponseEntity.ok(response);
     }
@@ -46,5 +52,4 @@ public class OrderController {
             return new String("Order not found Id: "+orderId);
         }
     }
-
 }
