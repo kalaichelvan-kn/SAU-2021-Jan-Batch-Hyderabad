@@ -7,20 +7,22 @@ import java.util.List;
 public class Order {
     private int orderId;
     private HashMap<Integer, Item> itemHashMap = new HashMap<>();
-
     public int getOrderId() {
         return orderId;
     }
-
     public void setOrderId(int orderId) {
         this.orderId = orderId;
     }
-
     public HashMap<Integer, Item> getItemHashMap() {
         return itemHashMap;
     }
-
     public void setItemHashMap(HashMap<Integer, Item> itemHashMap) {
         this.itemHashMap = itemHashMap;
+    }
+    public HashMap<String, Object> getOrderMap() {
+        HashMap<String, Object> obj = new HashMap<>();
+        obj.put("orderId",this.getOrderId());
+        obj.put("items", this.getItemHashMap());
+        return obj;
     }
 }

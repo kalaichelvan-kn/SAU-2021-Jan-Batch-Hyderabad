@@ -10,9 +10,10 @@ import java.util.List;
 
 public class InitialTask {
 
-    public static void main(String[] args) throws URISyntaxException, IOException {
-
-        Path path = Paths.get(InitialTask.class.getClassLoader().getResource("sample.html").toURI());
+    public static void main(String[] args)
+            throws URISyntaxException, IOException {
+        Path path = Paths.get(InitialTask.class.getClassLoader()
+                .getResource("sample.html").toURI());
         String contents = new String(Files.readAllBytes(path));
 //        System.out.println(contents);
         HtmlParser htmlParser = new HtmlParser(contents);
@@ -21,10 +22,16 @@ public class InitialTask {
         List<String> cityList = countryService.getCountryCities(countryName);
         printCountryCities(countryName, cityList);
     }
-    public static void printCountryCities(String countryName, List<String> cityList){
-        System.out.println("Country Name : "+countryName+"\n5 Cities");
-        for (String city: cityList) {
-            System.out.println(city);
+    public static void printCountryCities(String countryName,
+                                          List<String> cityList) {
+        if (cityList == null) {
+            System.out.println("Country " + countryName + " Not Found");
+        }
+        else {
+            System.out.println("Country Name : " + countryName + "\n5 Cities");
+            for(String city: cityList) {
+                System.out.println(city);
+            }
         }
     }
 }

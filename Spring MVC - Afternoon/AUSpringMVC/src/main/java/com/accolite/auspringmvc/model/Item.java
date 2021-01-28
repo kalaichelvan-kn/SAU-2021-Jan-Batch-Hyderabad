@@ -1,5 +1,7 @@
 package com.accolite.auspringmvc.model;
 
+import java.util.HashMap;
+
 public class Item {
     private int itemId;
     private String name;
@@ -11,7 +13,6 @@ public class Item {
         this.name = name;
         this.quantity = quantity;
     }
-
     public int getItemId() {
         return itemId;
     }

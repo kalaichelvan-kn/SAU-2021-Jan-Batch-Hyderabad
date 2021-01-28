@@ -1,0 +1,35 @@
+<div>
+    <div class="row">
+        <input type="number" [(ngModel)]="orderId" placeholder="Order Id"/>
+    </div><br/>
+    <div class="row">
+        <div class="col-3"><button class="btn btn-warning" name="div" (click)="createOrder()">Create Order</button></div>
+    </div>
+    <br/>
+    
+    <div class="row">
+      <input type="number" [(ngModel)]="itemId" placeholder="item Id"/>&nbsp;
+      <input type="text" [(ngModel)]="itemName" placeholder="Name"/>&nbsp;
+      <input type="number" [(ngModel)]="itemQuantity" placeholder="Quantity"/>&nbsp;
+    </div><br/>
+    <div class="row">
+      <div class="col-3"><button class="btn btn-warning" name="div" (click)="addItem()">add item</button></div>
+    </div>
+    <br/><br/>
+    <div class="row">
+      <div class="col-3"><button class="btn btn-warning" name="div" (click)="getOrderDetails()">Get Order</button></div>
+    </div>
+
+    <div>Result
+      <div *ngIf="validResponse">
+        <div>Order Id: {{ orderData.orderId }}</div>
+          <table>
+            <tr *ngFor="let item of items">
+              <td>{{ item }}</td>
+            </tr>
+          </table>
+      </div>
+    </div>
+</div>
+
+<router-outlet></router-outlet>

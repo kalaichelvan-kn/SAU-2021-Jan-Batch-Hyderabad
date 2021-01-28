@@ -1,42 +1,33 @@
 package service;
 
-import com.sun.deploy.util.StringUtils;
-
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Locale;
+import java.util.HashMap;
+import java.util.Arrays;
 
 public class CountryService {
     private HashMap<String, List<String>> countryCities = new HashMap<>();
-    public CountryService(){
-        String[] indiaCityList = {"Chennai", "Hyderabad", "Bangalore", "Cochi", "Goa"};
-        addCities("India", indiaCityList);
-        String[] southKoreaCityList = {"Asan", "Busan", "Cheonan", "Daegu", "Gunpo"};
-        addCities("South Korea", southKoreaCityList);
-        String[] nepalCityList = {"Lalitpur", "Pokhara", "Birgunj", "Bharatpur", "Kathmandu"};
-        addCities("Nepal", nepalCityList);
-        String[] somaliaCityList = {"Colgula", "Dalweyn", "Lanwaley", "Lughaya", "Leego"};
-        addCities("Somalia", somaliaCityList);
-        String[] vietnamCityList = {"Can Tho", "Da Nang", "Haiphong", "Hanoi", "Ho Chi Minh City"};
-        addCities("Vietnam", vietnamCityList);
+    public CountryService() {
+        this.countryCities.put("India",
+                Arrays.asList("Chennai", "Hyderabad", "Bangalore", "Cochi", "Goa"));
+        this.countryCities.put("South Korea",
+                Arrays.asList("Asan", "Busan", "Cheonan", "Daegu", "Gunpo"));
+        this.countryCities.put("Nepal",
+                Arrays.asList("Lalitpur", "Pokhara", "Birgunj", "Bharatpur", "Kathmandu"));
+        this.countryCities.put("Somalia",
+                Arrays.asList("Colgula", "Dalweyn", "Lanwaley", "Lughaya", "Leego"));
+        this.countryCities.put("Vietnam",
+                Arrays.asList("Can Tho", "Da Nang", "Haiphong", "Hanoi", "Ho Chi Minh City"));
     }
-    private void addCities(String country, String cities[]){
-        List<String> cityList = new ArrayList<>();
-        for (String city: cities) {
-            cityList.add(city);
-        }
-        this.countryCities.put(country, cityList);
-    }
-    public List<String> getCountryCities(String countryName){
-        if(countryName==null || countryName.length()==0)
+    public List<String> getCountryCities(String countryName) {
+        if (countryName == null || countryName.length() == 0) {
             return null;
-        if(!this.checkCountryExist(countryName)){
+        }
+        if (!this.checkCountryExist(countryName)) {
             return null;
         }
         return this.countryCities.get(countryName);
     }
-    public boolean checkCountryExist(String countryName){
+    public boolean checkCountryExist(String countryName) {
         return this.countryCities.containsKey(countryName);
     }
 }
