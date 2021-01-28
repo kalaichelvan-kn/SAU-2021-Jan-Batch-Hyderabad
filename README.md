@@ -24,13 +24,8 @@
 22. Design Principles/Patterns - Forenoon  [status - Completed]
 23. Rest webservice, Java soap - Afternoon  [status - Completed]
 24. Kafka Foundation - Forenoon  [status - Upcoming]
-25. Junit, Mockito, Logging - Afternoon  [status - Upcoming]
+25. Junit, Mockito, Logging - Afternoon  [status - Completed]
 26. Code Quality Java - Forenoon  [status - Upcoming]
 27. Code Quality JS, Angular - Afternoon  [status - Upcoming]
 28. Realtime WebApp Dev - Forenoon  [status - Upcoming]
 29. Realtime WebApp Dev - Afternoon  [status - Upcoming]
-
-
-
-1) Create a folder for each session - Format : session name-Morning/Afternoon. Example: RDMS Concepts-Morning
-2) Commit your assignments inside the folder you created
