@@ -9,7 +9,7 @@
 		<version>2.3.0.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.howtodoinjava</groupId>
+	<groupId>com.auspring</groupId>
 	<artifactId>spring-boot-kafka-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>spring-boot-kafka-app</name>
