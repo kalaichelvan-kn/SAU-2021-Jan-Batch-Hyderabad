@@ -16,6 +16,9 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/order")
 public class OrderController {
+    private String result = "result";
+    private String codeSuccess = "200";
+    private String codeFailure="400";
     @Autowired
     OrderService orderService;
 
@@ -32,7 +35,7 @@ public class OrderController {
     public ResponseEntity<Object> addItem(@PathVariable("id") int orderId, @RequestBody Item item){
         String response = orderService.addItem(orderId, item);
         Map<String, String> obj = new HashMap<>();
-        obj.put("result","200");
+        obj.put(result,codeSuccess);
         obj.put("data",response);
         return ResponseEntity.ok(obj);
     }
@@ -51,11 +54,11 @@ public class OrderController {
         Optional<Order> response = orderService.getOrderItems(orderId);
         Map<String, Object> obj = new HashMap<>();
         if(Objects.nonNull(response)){
-            obj.put("result","200");
+            obj.put(result,codeSuccess);
             obj.put("data",response);
             return ResponseEntity.ok(obj);
         }else{
-            obj.put("result","404");
+            obj.put(result,codeFailure);
             obj.put("data","Order not found"+orderId);
             return ResponseEntity.ok(obj);
         }
