@@ -11,9 +11,9 @@ for Assignment studentid and name is pushed, submission date and rank is auto ge
 
 ## screenshots
 
-![sc1](https://raw.githubusercontent.com/kalaichelvan-kn/SAU-2021-Jan-Batch-Hyderabad/main/Kafka%20-%20Forenoon/out.png)
-![sc1](https://raw.githubusercontent.com/kalaichelvan-kn/SAU-2021-Jan-Batch-Hyderabad/main/Kafka%20-%20Forenoon/stu1.png)
-![sc1](https://raw.githubusercontent.com/kalaichelvan-kn/SAU-2021-Jan-Batch-Hyderabad/main/Kafka%20-%20Forenoon/stu2.png)
-![sc1](https://raw.githubusercontent.com/kalaichelvan-kn/SAU-2021-Jan-Batch-Hyderabad/main/Kafka%20-%20Forenoon/tea.png)
-![sc1](https://raw.githubusercontent.com/kalaichelvan-kn/SAU-2021-Jan-Batch-Hyderabad/main/Kafka%20-%20Forenoon/ass1.png)
-![sc1](https://raw.githubusercontent.com/kalaichelvan-kn/SAU-2021-Jan-Batch-Hyderabad/main/Kafka%20-%20Forenoon/ass2.png)
+![sc1](https://raw.githubusercontent.com/kalaichelvan-kn/SAU-2021-Jan-Batch-Hyderabad/main/Kafka%20-%20Forenoon/out.PNG)
+![sc1](https://raw.githubusercontent.com/kalaichelvan-kn/SAU-2021-Jan-Batch-Hyderabad/main/Kafka%20-%20Forenoon/stu1.PNG)
+![sc1](https://raw.githubusercontent.com/kalaichelvan-kn/SAU-2021-Jan-Batch-Hyderabad/main/Kafka%20-%20Forenoon/stu2.PNG)
+![sc1](https://raw.githubusercontent.com/kalaichelvan-kn/SAU-2021-Jan-Batch-Hyderabad/main/Kafka%20-%20Forenoon/tea.PNG)
+![sc1](https://raw.githubusercontent.com/kalaichelvan-kn/SAU-2021-Jan-Batch-Hyderabad/main/Kafka%20-%20Forenoon/ass1.PNG)
+![sc1](https://raw.githubusercontent.com/kalaichelvan-kn/SAU-2021-Jan-Batch-Hyderabad/main/Kafka%20-%20Forenoon/ass2.PNG)
